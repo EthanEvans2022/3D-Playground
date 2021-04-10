@@ -11,11 +11,10 @@ public class InstantiationExample : MonoBehaviour
     {
         // Instantiate at position (0, 0, 0) and zero rotation.
         Instantiate(myPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-        Rigidbody body = myPrefab.GetComponent<Rigidbody>();
-        body.velocity = new Vector3(0,5,0);
     }
 
     void Update()
     {
     }
+
 }
